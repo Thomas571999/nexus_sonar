@@ -5,7 +5,7 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <!-- Identité du projet -->
+    <!--   Identité du projet -->
     <groupId>com.example</groupId>
     <artifactId>nexus_sonar</artifactId>
     <version>1.0.0</version>
