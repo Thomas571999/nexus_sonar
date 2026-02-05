@@ -1,0 +1,14 @@
+<distributionManagement>
+ <repository>
+ <id>nexus</id>
+ <url>http://localhost:8081/repository/spring-releases/</url>
+ </repository>
+</distributionManagement>
+Dans settings.xml (GitHub Actions) :
+<servers>
+ <server>
+ <id>nexus</id>
+ <username>${env.NEXUS_USER}</username>
+ <password>${env.NEXUS_PASSWORD}</password>
+ </server>
+</servers>
