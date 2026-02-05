@@ -36,6 +36,12 @@ jobs:
           -Dsonar.host.url=${{ secrets.SONAR_HOST_URL }} \
           -Dsonar.login=${{ secrets.SONAR_TOKEN }}
 
+      # Test de connexion à Nexus
+      - name: Test Nexus connectivity
+        if: github.ref == 'refs/heads/main'
+        run: |
+          curl -v -u ${{ secrets.NEXUS_USER }}:${{ secrets.NEXUS_PASSWORD }} http://82.67.177.67:8081/repository/spring-releases/
+
       # Setup Maven settings for Nexus
       - name: Setup Maven settings for Nexus
         if: github.ref == 'refs/heads/main'
