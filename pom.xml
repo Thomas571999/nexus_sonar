@@ -11,7 +11,7 @@
     <version>1.0.0</version>
     <packaging>jar</packaging>
     <name>nexus_sonar</name>
-    <description>Spring Boot project for Nexus, SonarQube & GitHub Actions CI/CD</description>
+    <description>Spring Boot project for Nexus, SonarQube &amp; GitHub Actions CI/CD</description>
 
     <!-- Propriétés Java et Maven -->
     <properties>
