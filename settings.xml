@@ -1,7 +1,9 @@
-<servers>
- <server>
- <id>nexus</id>
- <username>admin</username>
- <password>m^@%$8546L^%W6o2^!%822</password>
- </server>
-</servers>
+<settings>
+  <servers>
+    <server>
+      <id>nexus</id>
+      <username>${env.NEXUS_USER}</username>
+      <password>${env.NEXUS_PASSWORD}</password>
+    </server>
+  </servers>
+</settings>

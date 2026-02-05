@@ -64,7 +64,7 @@
         <repository>
             <id>nexus</id>
             <name>Nexus Repository</name>
-            <url>http://82.67.177.67:8081/repository/spring-releases</url>
+            <url>http://localhost:8081/repository/spring-releases</url>
         </repository>
     </distributionManagement>
 
